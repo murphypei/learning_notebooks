@@ -8,10 +8,19 @@ RUN apt-get update && apt-get install -y \
     curl \
     wget
 
-# 克隆 vllm 仓库并安装
-RUN git clone https://github.com/vllm-project/vllm.git && \
-    cd vllm && \
-    pip install -e .
+RUN pip install \
+    datasets \
+    trl \
+    peft \
+    bitsandbytes \
+    wandb \
+    accelerate \
+    transformers \
+    ipywidgets
+
+# RUN git clone https://github.com/vllm-project/vllm.git && \
+#     cd vllm && \
+#     pip install -e .
 
 # 设置工作目录
 WORKDIR /ws
