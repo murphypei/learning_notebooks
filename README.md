@@ -1,1 +1,1 @@
-# python jupyter notebooks
+# learning notebooks

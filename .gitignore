@@ -2,3 +2,4 @@ output
 wandb
 final_ckpt
 checkpoint
+__pycache__
